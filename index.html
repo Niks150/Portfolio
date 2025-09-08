@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Swami - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-overlay" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <!-- <div class="hero-badge">
+                <i class="fas fa-circle"></i>
+                Available for work
+            </div> -->
+            <h1>Hi, I'm <span style="background: var(--warm-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Sandeep</span></h1>
+            <p class="subtitle">Full-Stack Developer & UI/UX Designer</p>
+            <p class="hero-description">Passionate developer specializing in creating responsive, scalable web applications with seamless user experiences. Bridging the gap between design and development.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    View My Work
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-paper-plane"></i>
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="profile-image-container">
+                    <div class="profile-image">
+                        <img src="/Assets/Sandeep Passport Photo Final.jpg" alt="Sandeep Swami">
+                    </div>
+                    <div class="profile-decoration"></div>
+                </div>
+                <div class="about-text">
+                    <h2>About <span class="highlight">Me</span></h2>
+                    <p>I am a passionate Full-Stack Developer with a strong foundation in frontend technologies and UI/UX design, combined with hands-on experience in backend development. I specialize in crafting responsive, scalable, and visually appealing web applications.</p>
+                    <p>Currently pursuing B.Tech in Information Technology at Parul University with a CGPA of 7.13. I have expertise in React.js, Node.js, MongoDB, and modern web technologies, along with design skills in Figma and Adobe XD.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">7.13</div>
+                            <div class="stat-label">CGPA</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <a href="mailto:sandeepswami344@gmail.com" class="btn btn-primary">
+                            <i class="fas fa-handshake"></i>
+                            Hire Me
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links Section -->
+    <section class="social-section">
+        <div class="container">
+            <div class="social-content">
+                <h2 class="section-title">Let's <span style="background: var(--warm-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Connect</span></h2>
+                <p class="section-subtitle">Follow my journey and connect with me on various platforms</p>
+                <div class="social-grid">
+                    <div class="social-card">
+                        <div class="social-icon github-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>Check out my code repositories and open source contributions</p>
+                        <a href="https://github.com/Niks150" target="_blank" class="btn btn-primary">Visit GitHub</a>
+                    </div>
+                    <div class="social-card">
+                        <div class="social-icon linkedin-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me professionally and view my career journey</p>
+                        <a href="https://www.linkedin.com/in/sandeep-swami-b14553321/1" target="_blank" class="btn btn-primary">Connect</a>
+                    </div>
+                    <div class="social-card">
+                        <div class="social-icon instagram-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h3>Instagram</h3>
+                        <p>Follow my daily life and behind-the-scenes content</p>
+                        <a href="https://www.instagram.com/sandeep_.vaishnav/" target="_blank" class="btn btn-primary">Follow Me</a>
+                    </div>
+                    <div class="social-card">
+                        <div class="social-icon twitter-icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <h3>Twitter</h3>
+                        <p>Stay updated with my thoughts on tech and development</p>
+                        <a href="#" target="_blank" class="btn btn-primary">Follow</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="skills-content">
+                <h2 class="section-title">Technical <span style="background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Skills</span></h2>
+                <p class="section-subtitle">Technologies I work with</p>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3>React.js</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <h3>Node.js</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>MongoDB</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Express.js</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <h3>Figma</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 88%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>Tailwind CSS</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured <span style="background: var(--secondary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Projects</span></h2>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Lost & Found System</h3>
+                    <p>A comprehensive platform for university students and staff</p>
+                </div>
+                <div class="project-content">
+                    <p>Designed and developed a comprehensive Lost & Found system exclusively for Parul University students and staff. The platform enables users to report lost items and claim found ones with a secure authentication system.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <h4 style="margin: 2rem 0 1rem 0; color: var(--text-primary); font-weight: 600;">Key Features:</h4>
+                    <ul style="margin: 1rem 0; padding-left: 2rem; line-height: 1.8; color: var(--text-secondary);">
+                        <li>Secure login and registration system for verified university users</li>
+                        <li>Image upload functionality for detailed item descriptions</li>
+                        <li>Real-time updates for faster item recovery</li>
+                        <li>Fully responsive design across all devices</li>
+                        <li>Minimalistic and user-friendly interface</li>
+                    </ul>
+                    <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="https://github.com/Niks150/Final-year" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">My <span style="background: var(--warm-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Journey</span></h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <h3>Student Ambassador</h3>
+                    <h4 style="color: rgba(255, 255, 255, 0.8); margin-bottom: 0.5rem;">Parul University</h4>
+                    <div class="experience-date">May 2025 - Present</div>
+                    <ul style="padding-left: 1.5rem; line-height: 1.7;">
+                        <li>Assisted new students and their parents throughout the university admission process</li>
+                        <li>Guided campus visitors and provided detailed information about courses and facilities</li>
+                        <li>Helped parents complete admission forms with professionalism and empathy</li>
+                        <li>Acted as a bridge between the admission team and incoming students</li>
+                        <li>Contributed to creating positive first impressions for freshers and their families</li>
+                    </ul>
+                    <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.2);">
+                        <strong>Skills Developed:</strong> Interpersonal Communication, Team Coordination, Time Management, Customer Service
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Section with Another Photo -->
+    <section class="about-section" style="background: var(--secondary-gradient);">
+        <div class="container">
+            <div class="about-content" style="grid-template-columns: 1.2fr 1fr;">
+                <div class="about-text" style="color: white;">
+                    <h2>Personal <span style="background: var(--warm-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Interests</span></h2>
+                    <p style="color: rgba(255, 255, 255, 0.9);"><strong>Coding:</strong> Always exploring new technologies and frameworks to stay ahead in the rapidly evolving tech landscape.</p>
+                    <p style="color: rgba(255, 255, 255, 0.9);"><strong>Reading Novels:</strong> I enjoy diving into different worlds through literature, which helps enhance my creativity and problem-solving skills.</p>
+                    <p style="color: rgba(255, 255, 255, 0.9);"><strong>Travelling:</strong> Exploring new places and cultures broadens my perspective and inspires innovative approaches to development challenges.</p>
+                    
+                    <div style="margin-top: 3rem; padding: 2rem; background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border); border-radius: var(--border-radius);">
+                        <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Education</h3>
+                        <div style="margin-bottom: 1rem;">
+                            <strong>B.Tech - Information Technology</strong><br>
+                            <span style="color: rgba(255, 255, 255, 0.8);">Parul University (2022-2026) | CGPA: 7.13/10</span>
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <strong>12th CBSE</strong><br>
+                            <span style="color: rgba(255, 255, 255, 0.8);">BN Zala (2022) | 60%</span>
+                        </div>
+                        <div>
+                            <strong>10th GSEB</strong><br>
+                            <span style="color: rgba(255, 255, 255, 0.8);">AMBE School, Vadodara (2020) | 52%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-image-container">
+                    <div class="profile-image" style="border: 4px solid rgba(255, 255, 255, 0.3);">
+                        <img src="/Assets/IMG20230609161630_4.jpg" alt="Sandeep Swami">
+                    </div>
+                    <div class="profile-decoration" style="background: var(--accent-gradient);"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In <span style="background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Touch</span></h2>
+            <p class="section-subtitle">Let's work together to bring your ideas to life!</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>sandeepswami344@gmail.com</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">2203031080277@paruluniversity.ac.in</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+91-9016372258</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">+91-9427134188</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Vadodara, Gujarat</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">India - 390011</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Languages</h3>
+                    <p>English, Hindi</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Gujarati, Rajasthani</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="script.js"></script>
+    
+</body>
+</html>
